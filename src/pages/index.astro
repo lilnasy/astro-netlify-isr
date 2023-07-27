@@ -6,6 +6,9 @@
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>{new Date(Date.now()).toUTCString()}</h1>
+	    <h2>This page will be rendered only when someone visits it.</h2>
+	    <h3>Anyone who visits it again will see a copy of this page.</h3>
+	    <h4>Without netlify builders, they would have seen a freshly created page with the current time instead.</h4>
+		<p>Rendered at: {new Date(Date.now()).toUTCString()}</p>
 	</body>
 </html>
